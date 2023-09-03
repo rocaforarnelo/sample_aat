@@ -1,0 +1,12 @@
+//Proper BDD implementation using https://martinfowler.com/bliki/UbiquitousLanguage.html and DomainModel 
+
+Feature: Upload Photo
+
+Scenario: User should be able to add Photo
+    When the User add a Photo to be uploaded
+    Then the Photo will be added to the List of Photo(s) to be uploaded
+
+Scenario: User should be able to upload photo
+    Given list of Photos
+    When the user upload photo
+    Then show upload confirmation
